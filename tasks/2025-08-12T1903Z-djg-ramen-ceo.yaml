@@ -1,0 +1,25 @@
+version: 1
+kind: figma.design
+meta:
+  project: main
+  author: chatgpt
+  brief: ../briefs/2025-08-12-djg-ramen-site.md
+figma:
+  fileKey: CyKiU1o9dj9KGXVV3Xe02k
+  page: Page 4
+  channel: web-home
+steps:
+  - op: create_frame
+    name: CEO Greeting
+    width: 1440
+    height: 2000
+  - op: add_component
+    name: CEOPhoto
+    children:
+      - { op: place_image, src: "assets/ceo-photo.png" }
+  - op: add_text
+    style: h2
+    text: "정성과 바른 음식, 그것이 대장금 라면의 정신입니다."
+  - op: add_text
+    style: body
+    text: "안녕하십니까. 대장금 라면은 한국 전통 궁중 요리 정신과 현대 식품 기술이 만난 특별한 라면입니다. 하림의 품질관리와 MBC 드라마 ‘대장금’의 가치관을 담아 깊고 깔끔한 맛과 안전한 식품을 세계인과 나누고자 합니다."

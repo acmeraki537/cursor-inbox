@@ -1,0 +1,84 @@
+version: 1
+kind: figma.design
+meta:
+  project: main
+  author: chatgpt
+  brief: ../briefs/2025-08-12-djg-ramen-site.md
+figma:
+  fileKey: CyKiU1o9dj9KGXVV3Xe02k
+  page: Page 3
+  channel: web-home
+steps:
+  - op: create_frame
+    name: Product Detail
+    width: 1440
+    height: 5000
+
+  - op: create_component
+    name: ProductImage
+    children:
+      - { op: place_image, src: "assets/pack-mild.png" }
+      - { op: place_image, src: "assets/pack-spicy.png" }
+
+  - op: create_component
+    name: MildInfo
+    children:
+      - { op: add_text, style: h2, text: "순한맛" }
+      - { op: add_table,
+          data: [
+            ["중량", "118 g", "-"],
+            ["열량", "250 kcal", "-"],
+            ["총지방", "7 g", "9%"],
+            ["포화지방", "3 g", "15%"],
+            ["트랜스지방", "0 g", "0%"],
+            ["콜레스테롤", "0 mg", "0%"],
+            ["나트륨", "815 mg", "35%"],
+            ["총탄수화물", "42 g", "15%"],
+            ["식이섬유", "1 g", "4%"],
+            ["총당류", "-", "-"],
+            ["단백질", "-", "-"]
+          ]
+        }
+      - { op: add_text, style: body, text: "밀가루, 변성전분, 팜유, 면류첨가제, 소금 / 알레르기: 대두, 밀, 참깨 포함" }
+
+  - op: create_component
+    name: SpicyInfo
+    children:
+      - { op: add_text, style: h2, text: "매운맛" }
+      - { op: add_table,
+          data: [
+            ["중량", "133 g", "-"],
+            ["열량", "280 kcal", "-"],
+            ["총지방", "8 g", "10%"],
+            ["포화지방", "3 g", "15%"],
+            ["트랜스지방", "0 g", "0%"],
+            ["콜레스테롤", "0 mg", "0%"],
+            ["나트륨", "595 mg", "26%"],
+            ["총탄수화물", "46 g", "17%"],
+            ["식이섬유", "-", "4%"],
+            ["총당류", "5.5 g", "-"],
+            ["첨가당", "1 g", "12%"],
+            ["단백질", "6 g", "-"],
+            ["비타민 D", "0 mcg", "0%"],
+            ["칼슘", "24.35 mcg", "2%"],
+            ["철", "0.4 mg", "2%"],
+            ["칼륨", "115.25 mg", "2%"]
+          ]
+        }
+      - { op: add_text, style: body, text: "밀가루, 변성감자전분, 팜유, 소스(설탕, 고과당시럽, 간장 등) / 알레르기: 대두, 밀, 참깨 포함" }
+
+  - op: add_badges
+    items: ["HACCP", "HALAL", "Made in Korea"]
+
+  - op: add_component
+    name: RelatedRecipes
+    children:
+      - { op: add_note, text: "해당 제품을 활용한 레시피 카드 3~4개" }
+
+  - op: add_frame
+    name: CTAButtons
+    layout: horizontal
+    gap: 16
+    children:
+      - { op: add_button, variant: "primary", text: "지금 구매하기" }
+      - { op: add_button, variant: "secondary", text: "해외 유통 문의" }

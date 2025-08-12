@@ -1,0 +1,27 @@
+version: 1
+kind: figma.design
+meta:
+  project: main
+  author: chatgpt
+  brief: ../briefs/2025-08-12-djg-ramen-site.md
+figma:
+  fileKey: CyKiU1o9dj9KGXVV3Xe02k
+  page: Page 2
+  channel: web-home
+steps:
+  - op: create_frame
+    name: Product List
+    width: 1440
+    height: 5000
+  - op: add_component
+    name: FilterBar
+    children:
+      - { op: add_button, text: "전체" }
+      - { op: add_button, text: "순한" }
+      - { op: add_button, text: "매운" }
+      - { op: add_button, text: "불볶음" }
+      - { op: add_button, text: "할랄" }
+  - op: add_component
+    name: ProductGrid
+    children:
+      - { op: add_note, text: "제품 썸네일 카드 반복, 6종 라인업" }

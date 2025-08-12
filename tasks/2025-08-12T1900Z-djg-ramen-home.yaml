@@ -1,0 +1,17 @@
+version: 1
+kind: figma.design
+meta:
+  project: main
+  author: chatgpt
+  brief: ../briefs/2025-08-12-djg-ramen-site.md
+figma:
+  fileKey: CyKiU1o9dj9KGXVV3Xe02k
+  page: Page 1
+  channel: web-home
+steps:
+  - op: create_frame
+    name: Home
+    width: 1440
+    height: 9000
+  - op: add_note
+    text: "Hero~Footer 포함, USP/라인업/스토리/레시피/뉴스/구매처/문의 구성"
