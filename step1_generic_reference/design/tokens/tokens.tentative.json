@@ -1,0 +1,36 @@
+{
+  "status": "draft",
+  "color": {
+    "brand": {
+      "primary": null,
+      "secondary": null
+    },
+    "text": {
+      "primary": null,
+      "secondary": null,
+      "inverted": null
+    },
+    "surface": {
+      "bg": "#FFFFFF",
+      "muted": null
+    }
+  },
+  "typography": {
+    "family": {
+      "heading": null,
+      "body": null
+    },
+    "scale": {
+      "h1": { "size": 36, "line": 44 },
+      "body": { "size": 16, "line": 24 }
+    }
+  },
+  "grid": {
+    "breakpoints": ["sm", "md", "lg"],
+    "columns": 12
+  },
+  "notes": [
+    "1단계에서는 HEX를 확정하지 않는다(정확 추출 어려움).",
+    "2단계에서 자사 브랜딩 기준으로 색/폰트 확정."
+  ]
+}

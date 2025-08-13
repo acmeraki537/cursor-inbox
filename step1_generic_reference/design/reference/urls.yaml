@@ -1,0 +1,5 @@
+targets:
+  - name: "sample_otoki_main"
+    url: "https://www.otoki.com/main/"
+notes:
+  - "이 파일은 레퍼런스 URL만 기록한다. HTML/CSS/이미지 직접 복제 금지. 영감/패턴 추출 용도."
